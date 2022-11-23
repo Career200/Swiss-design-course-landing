@@ -3,8 +3,6 @@ var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
   let currentScrollPos = window.pageYOffset;
   let icon = document.getElementById("scrollIcon")
-  let endScrollAnchor = document.getElementsByTagName('h3')
-  //console.log(endScrollAnchor)
   if (prevScrollpos < currentScrollPos) {
     icon.style.bottom = "2%";
   }
